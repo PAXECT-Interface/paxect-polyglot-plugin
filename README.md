@@ -8,4 +8,3 @@
 ```bash
 git clone https://github.com/PAXECT-Interface/paxect-polyglot-plugin.git
 cd paxect-polyglot-plugin/plugins/polyglot
-
