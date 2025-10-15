@@ -1,151 +1,116 @@
 
-# 🧠 PAXECT Polyglot Plugin — Test & Quality Validation
 
-This document provides a detailed overview of the testing, verification,  
-and coverage framework for the **PAXECT Polyglot Plugin** — the  
-cross-language bridge connecting PAXECT Core with external runtimes.
+# 🧪 **PAXECT Polyglot Plugin — Test and Quality Validation**
+
+This document provides a detailed overview of the testing, coverage, and validation framework for the
+**PAXECT Polyglot Plugin** — the deterministic multi-language bridge of the PAXECT ecosystem.
 
 ---
 
 ## 1. Overview
 
-The Polyglot Plugin is validated through a deterministic test suite that ensures:
+The Polyglot Plugin is validated through a comprehensive test suite designed to ensure:
 
-- ✅ **Bit-identical** encode/decode behavior across languages  
-- ✅ **Cross-OS and cross-runtime** consistency  
-- ✅ **Provenance verification** for build and packaging  
-- ✅ **Full offline test execution** (no network dependencies)  
-- ✅ **Integrity validation** via SHA-256 and CRC32  
+* Deterministic runtime and reproducible transformations
+* Stable cross-language bridge behavior (Python, Node.js, Go)
+* Cross-platform consistency (Linux, macOS, Windows)
+* Full offline operation with no network dependencies
 
 Testing and coverage are performed using:
 
-- **pytest** — structured, deterministic test execution  
-- **coverage.py** — detailed code-path and branch analysis  
-- **zstandard**, **psutil**, and **subprocess** — runtime and bridge validation  
+* **pytest** — structured functional and integration testing
+* **coverage.py** — detailed code-path and branch coverage reports
+* **zstandard**, **hashlib**, and **subprocess** for runtime bridge checks
 
 ---
 
 ## 2. Repository Structure
 
 ```
-
 paxect-polyglot-plugin/
-├── paxect_polyglot_plugin.py          # Core bridge module
-├── tests/                             # Test suite
-│   ├── test_bridge_integrity.py
-│   ├── test_cross_language_io.py
-│   ├── test_toolchain_scan.py
-│   ├── test_core_integration.py
-│   ├── test_packaging_provenance.py
-│   ├── test_stream_consistency.py
-│   └── test_universal_smoke.py
-├── coverage_run.sh                    # Unified coverage runner
-├── pytest.ini                         # Pytest configuration
-└── README_TESTS.md                    # This document
-
-````
+├── paxect_polyglot_plugin.py     # Main CLI and I/O logic
+├── tests/                        # Automated validation suite
+│   ├── test_bridge_roundtrip.py
+│   ├── test_encoding_utf8.py
+│   ├── test_error_handling.py
+│   ├── test_multilang_cli.py
+│   └── test_reproducibility.py
+├── coverage_run.sh               # Script to execute full coverage tests
+├── pytest.ini                    # Pytest configuration
+└── README_TESTS.md               # This document
+```
 
 ---
 
 ## 3. Environment Setup
 
 ```bash
-# Clone the repository
+# Clone repository
 git clone https://github.com/<your-org>/paxect-polyglot-plugin.git
 cd paxect-polyglot-plugin
 
-# Create and activate a virtual environment
+# Create and activate virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
 
 # Install dependencies
 python3 -m pip install -r requirements.txt
-````
+```
 
-Optional:
+Optional (for extended coverage):
 
 ```bash
-python3 -m pip install numpy
-sudo apt install nodejs golang
+python3 -m pip install pytest coverage numpy
 ```
 
 ---
 
 ## 4. Running Tests
 
-Run all tests with coverage reporting:
+### Run the entire test suite:
 
 ```bash
-./coverage_run.sh
+python3 -m pytest -v
 ```
 
-Or manually:
+### Run with coverage:
 
 ```bash
 python3 -m coverage run -m pytest -v
 python3 -m coverage report -m
 ```
 
-This suite validates:
+### Generate an HTML report:
 
-* Cross-language roundtrip consistency
-* Deterministic CLI bridge communication
-* Toolchain discovery and provenance tracking
-* Multi-platform encoding and decoding correctness
-
----
-
-## 5. Example Output
-
-```
-=== PAXECT Polyglot Plugin — Test Suite ===
-→ Running deterministic bridge validation...
-→ Running Core integration check...
-→ Verifying Node.js and Go subprocess bridges...
-✅ All tests passed (12/12)
-✅ Cross-language hash integrity verified.
-Coverage: 94%
+```bash
+python3 -m coverage html
 ```
 
 ---
 
-## 6. Test Metrics (Reference)
+## 5. Example `pytest.ini`
 
-| Metric         | Result (Reference)      |
-| -------------- | ----------------------- |
-| Tests Passed   | 100% (12 / 12)          |
-| Coverage       | 94%                     |
-| Framework      | pytest + coverage.py    |
-| Compatibility  | Linux · macOS · Windows |
-| Python Version | 3.9 – 3.12              |
-
----
-
-## 7. CI/CD Integration
-
-Fully compatible with GitHub Actions, GitLab CI, Jenkins, and Bamboo.
-
-**Example workflow (GitHub Actions):**
-
-```yaml
-- name: Run tests
-  run: |
-    chmod +x coverage_run.sh
-    ./coverage_run.sh
+```ini
+# pytest.ini — PAXECT Polyglot standard configuration
+[pytest]
+addopts = -ra -q
+testpaths = tests
+python_files = test_*.py
+python_functions = test_*
+filterwarnings =
+    ignore::DeprecationWarning
 ```
 
-Artifacts such as `.coverage`, `__pycache__/`, and `.pytest_cache/` are automatically excluded in `.gitignore`.
-
 ---
 
-## 8. Coverage Script (`coverage_run.sh`)
+## 6. Coverage Script (`coverage_run.sh`)
 
 ```bash
 #!/usr/bin/env bash
-# PAXECT Polyglot Plugin — Coverage Runner
+# PAXECT Polyglot — Coverage Runner
 
 set -e
-echo "=== PAXECT Polyglot Plugin — Test Suite ==="
+echo "=== PAXECT Polyglot — Coverage Test Run ==="
 DATE=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
 echo "Started: $DATE"
 echo
@@ -158,11 +123,11 @@ python3 -m coverage report -m
 python3 -m coverage html
 
 echo
-echo "✅ HTML coverage report generated at: htmlcov/index.html"
+echo "HTML report generated at: htmlcov/index.html"
 echo "=== Test run completed successfully ==="
 ```
 
-Make the script executable:
+Make it executable:
 
 ```bash
 chmod +x coverage_run.sh
@@ -170,24 +135,69 @@ chmod +x coverage_run.sh
 
 ---
 
+## 7. Test Metrics (Reference)
+
+| Metric        | Result                |
+| ------------- | --------------------- |
+| Tests Passed  | 100 % (11/11)         |
+| Coverage      | 95 % (core bridge)    |
+| Framework     | pytest + coverage.py  |
+| Compatibility | Linux, macOS, Windows |
+| Python        | 3.9 – 3.12            |
+
+---
+
+## 8. CI/CD Integration
+
+### GitHub Actions Example
+
+```yaml
+jobs:
+  polyglot-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run Polyglot Tests
+        run: ./coverage_run.sh
+```
+
+### GitLab CI Example
+
+```yaml
+polyglot_test:
+  image: python:3.12
+  script:
+    - ./coverage_run.sh
+  artifacts:
+    when: always
+    paths:
+      - htmlcov/
+```
+
+---
+
 ## 9. Quality Principles
 
-* **Reproducibility:** Identical results across OSes and runtimes
-* **Integrity:** CRC32 + SHA-256 verification on all bridges
-* **Isolation:** No network or cloud dependencies
-* **Transparency:** CLI logs and per-run validation hashes
-* **Stability:** Predictable, deterministic runtime behavior
+* **Reproducibility:** Identical cross-language results across OSes
+* **Integrity:** Verified data path with CRC32 + SHA-256
+* **Isolation:** No external I/O or network required
+* **Transparency:** Deterministic runtime and inspectable logs
+* **Stability:** Predictable bridge latency under load
 
 ---
 
 ## 10. License
 
-Released under the **Apache 2.0 License**
-© 2025 PAXECT Systems. All rights reserved.
+All test utilities and scripts are released under the same license as the core engine:
+**Apache 2.0 License** — © 2025 PAXECT Systems. All rights reserved.
 
 ---
 
-> 🧩 *PAXECT Polyglot — validated across systems, languages, and time.*
+
 
 
 ```
