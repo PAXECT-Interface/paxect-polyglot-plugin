@@ -1,4 +1,6 @@
-
+<p align="center">
+  <img src="ChatGPT%20Image%202%20okt%202025%2C%2022_33_51.png" alt="PAXECT logo" width="200"/>
+</p>
 
 # 🧪 **PAXECT Polyglot Plugin — Test and Quality Validation**
 
@@ -196,6 +198,8 @@ All test utilities and scripts are released under the same license as the core e
 **Apache 2.0 License** — © 2025 PAXECT Systems. All rights reserved.
 
 ---
-
+<p align="center">
+  <img src="ChatGPT%20Image%202%20okt%202025%2C%2022_33_51.png" alt="PAXECT logo" width="200"/>
+</p>
 
 
