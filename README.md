@@ -11,12 +11,6 @@
 [![Discussions](https://img.shields.io/badge/Discuss-join-blue)](../../discussions)
 [![Security](https://img.shields.io/badge/Security-responsible%20disclosure-informational)](./SECURITY.md)
 
-Perfect 🙌 — ik ga nu de **definitieve hoofd-README.md** voor de **PAXECT Polyglot Plugin** maken op **enterprise-niveau**,
-in precies dezelfde toon, indeling en professionaliteit als jouw *SelfTune-repo*.
-
-Het resultaat hieronder kun je **1-op-1 plakken** in je GitHub-repo (hoofd-README.md).
-Het is volledig consistent met de PAXECT-stijl en internationaal gericht.
-
 ---
 
 # 🌐 **PAXECT Polyglot — Cross-Language Deterministic Bridge**
@@ -276,10 +270,7 @@ Deterministic interoperability for the modern multi-language enterprise.
 
 ✅ **Deterministic · Reproducible · Cross-Language · Offline**
 
----
 
-Wil je dat ik hierna ook een **verkorte versie (250-300 woorden)** maak voor de repo-samenvatting (de bovenste GitHub-bio-tekst)?
-Dat is wat boven de README zichtbaar is op GitHub zelf — ideaal voor public visibility.
 
 
 ---
