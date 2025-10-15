@@ -261,15 +261,19 @@ Sponsorship enables continuous cross-language verification and deterministic QA 
 ---
 
 ## 🪪 License
-
-Licensed under **Apache 2.0**
-© 2025 PAXECT Systems.
-Deterministic interoperability for the modern multi-language enterprise.
-
 ---
+## Governance & Ownership
+- **Ownership:** All PAXECT products and trademarks (PAXECT™ name + logo) remain the property of the Owner.
+- **License:** Source code is Apache-2.0; trademark rights are **not** granted by the code license.
+- **Core decisions:** Architectural decisions and **final merges** for Core and brand-sensitive repos require **Owner approval**.
+- **Contributions:** PRs are welcome and reviewed by maintainers; merges follow CODEOWNERS + branch protection.
+- **Naming/branding:** Do not use the PAXECT name/logo for derived projects without written permission; see `TRADEMARKS.md`.
+
 
 ✅ **Deterministic · Reproducible · Cross-Language · Offline**
 
+© 2025 PAXECT Systems.
+Deterministic interoperability for the modern multi-language enterprise
 
 
 
@@ -289,7 +293,5 @@ Deterministic interoperability for the modern multi-language enterprise.
   <img src="ChatGPT%20Image%202%20okt%202025%2C%2022_33_51.png" alt="PAXECT logo" width="200"/>
 </p>
 
-```
 
----
 
