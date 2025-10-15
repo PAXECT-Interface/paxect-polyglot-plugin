@@ -248,7 +248,9 @@ We actively review proposals and merge validated ideas into the PAXECT roadmap.
 If **PAXECT SelfTune** helped your research, deployment, or enterprise project,  
 please consider giving the repository a [Star on GitHub](https://github.com/PAXECT-Interface/paxect-selftune-plugin/stargazers) —  
 it helps others discover the project and supports long-term maintenance.
+
 ---
+
 
 ## 💼 Sponsorships & Enterprise Support
 
