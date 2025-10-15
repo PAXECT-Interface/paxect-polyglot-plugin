@@ -2,13 +2,13 @@
 
 ---
 
-# 🤝 Contributing Guidelines
+#  Contributing Guidelines
 
 Thank you for your interest in contributing to the **PAXECT Polyglot Plugin**.
 
 ---
 
-## 🧭 Overview
+##  Overview
 
 This repository is part of the **PAXECT Interface Ecosystem**.
 All contributions must remain:
@@ -23,7 +23,7 @@ Each change must preserve **byte-identical behavior** and remain consistent acro
 
 ---
 
-## 🧩 Development Setup
+##  Development Setup
 
 1. **Fork this repository** on GitHub
    Create your own fork to contribute safely.
@@ -56,7 +56,7 @@ Each change must preserve **byte-identical behavior** and remain consistent acro
 
 ---
 
-## 🧪 Testing Standards
+##  Testing Standards
 
 * Use **pytest** for all new tests (`tests/` directory)
 * Keep tests **deterministic and platform-neutral**
@@ -71,7 +71,7 @@ python3 -m pytest -v
 
 ---
 
-## 🔄 Pull Requests
+##  Pull Requests
 
 * Follow the naming pattern:
   `feature/<short-description>` or `fix/<issue-id>`
@@ -81,7 +81,7 @@ python3 -m pytest -v
 
 ---
 
-## 🔐 Security and Compliance
+##  Security and Compliance
 
 * Do not add third-party telemetry, analytics, or network dependencies
 * Avoid AI-generated randomness, pseudo-learning, or heuristic behavior
@@ -89,7 +89,7 @@ python3 -m pytest -v
 
 ---
 
-## 📬 Communication
+##  Communication
 
 * **Issues:** Bug reports, feature ideas, reproducibility feedback
 * **Discussions:** Technical proposals or architecture debates
@@ -97,7 +97,7 @@ python3 -m pytest -v
 
 ---
 
-## 🧾 License
+##  License
 
 All contributions fall under the **Apache 2.0 License** and
 are subject to PAXECT’s deterministic and audit-compliance policies.
