@@ -174,8 +174,9 @@ Released under the **Apache 2.0 License**
 | [PAXECT Link Plugin](https://github.com/<your-org>/paxect-link-plugin)         | Cross-OS / Network bridge layer          |
 
 ---
-
-> 🌍 *PAXECT Polyglot — deterministic language interoperability for a verifiable world.*
+<p align="center">
+  <img src="ChatGPT%20Image%202%20okt%202025%2C%2022_33_51.png" alt="PAXECT logo" width="200"/>
+</p>
 
 ```
 
