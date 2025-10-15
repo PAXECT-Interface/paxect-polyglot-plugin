@@ -231,6 +231,39 @@ Each hop validates CRC32, SHA-256, and container version fields for reproducibil
 | macOS 14 Sonoma       | ✅ Identical hashes across languages     |
 | Windows 11            | ✅ Full cross-runtime integrity verified |
 
+
+---
+
+
+
+## Path to Paid
+
+**PAXECT** is built to stay free and open-source at its core.  
+At the same time, we recognize the need for a sustainable model to fund long-term maintenance and enterprise adoption.
+
+### Principles
+
+- **Core stays free forever** — no lock-in, no hidden fees.  
+- **Volunteers and researchers**: always free access to source, builds, and discussions.  
+- **Transparency**: clear dates, no surprises.  
+- **Fairness**: individuals stay free; organizations that rely on enterprise features contribute financially.
+
+### Timeline
+
+- **Initial phase**: all modules, including enterprise, are free for the first 6 months.  
+- **30 days before renewal**: a decision will be made whether the free enterprise phase is extended for another 6 months.  
+- **Core/baseline model**: always free with updates. The exact definition of this baseline model is still under discussion.
+
+### Why This Matters
+
+- **Motivation**: volunteers know their work has impact and will remain accessible.  
+- **Stability**: enterprises get predictable guarantees and funded maintenance.  
+- **Sustainability**: ensures continuous evolution without compromising openness.
+
+
+
+
+
 ---
 
 ## 🤝 Community & Support
