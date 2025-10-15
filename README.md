@@ -243,6 +243,11 @@ Each hop validates CRC32, SHA-256, and container version fields for reproducibil
 
 We actively review proposals and merge validated ideas into the PAXECT roadmap.
 
+## Project Recognition
+
+If **PAXECT SelfTune** helped your research, deployment, or enterprise project,  
+please consider giving the repository a [Star on GitHub](https://github.com/PAXECT-Interface/paxect-selftune-plugin/stargazers) —  
+it helps others discover the project and supports long-term maintenance.
 ---
 
 ## 💼 Sponsorships & Enterprise Support
