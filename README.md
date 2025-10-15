@@ -5,7 +5,7 @@
 It enables secure, verifiable data exchange across languages and operating systems — from edge devices to cloud services —  
 while maintaining full reproducibility and audit-ready integrity.
 
-> **One binary format — many languages — zero AI heuristics.**
+> **One binary format — many languages — No AI heuristics.**
 
 ---
 
@@ -138,7 +138,7 @@ python3 demos/07_5in1_smoke.py
 ## ✅ Quality & Compliance
 
 * Deterministic and reproducible across all bindings
-* Zero AI or heuristic decision logic
+* No AI or heuristic decision logic
 * Fully offline and privacy-preserving
 * Verified provenance, encoding, and transport integrity
 * Enterprise-grade reproducibility under CI/CD pipelines
