@@ -330,16 +330,6 @@ Deterministic interoperability for the modern multi-language enterprise
 
 
 
----
-
-## 🔗 Related Repositories
-
-| Component                                                                      | Purpose                                  |
-| ------------------------------------------------------------------------------ | ---------------------------------------- |
-| [PAXECT Core](https://github.com/<your-org>/paxect-core)                       | Deterministic container engine           |
-| [PAXECT SelfTune Plugin](https://github.com/<your-org>/paxect-selftune-plugin) | Adaptive runtime and performance control |
-| [PAXECT AES Plugin](https://github.com/<your-org>/paxect-aes-plugin)           | AES-based encryption layer               |
-| [PAXECT Link Plugin](https://github.com/<your-org>/paxect-link-plugin)         | Cross-OS / Network bridge layer          |
 
 ---
 <p align="center">
