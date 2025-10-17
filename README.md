@@ -323,6 +323,8 @@ Sponsorship enables continuous cross-language verification and deterministic QA 
 - **Naming/branding:** Do not use the PAXECT name/logo for derived projects without written permission; see `TRADEMARKS.md`.
 
 
+---
+
 ✅ **Deterministic · Reproducible · Cross-Language · Offline**
 
 © 2025 PAXECT Systems.
