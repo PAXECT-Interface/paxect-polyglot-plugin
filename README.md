@@ -20,6 +20,8 @@ Secure, deterministic interoperability across languages, runtimes, and operating
 The **PAXECT Polyglot Plugin** provides a reproducible, verifiable data bridge between **Python**, **Node.js**, and **Go** —
 extensible to any runtime through a common binary interface powered by **PAXECT Core**.
 
+Plug-and-play with zero dependencies and no vendor lock-in.
+
 No cloud, no AI heuristics — just **byte-for-byte deterministic transport**.
 
 ---
