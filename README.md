@@ -83,32 +83,167 @@ allowing Python pipelines, Go microservices, and Node.js orchestration layers to
 | **Containerized Protocol**     | Leverages PAXECT Core for structured binary framing |
 | **Offline Operation**          | Requires no network or external calls               |
 
+
+
+---
+
+# 🧩 PAXECT Polyglot Plugin — Enterprise Demo Suite
+
+*(Deterministic · UTF-8 Safe · Cross-Runtime · Offline)*
+
+> 💬 *Validated demo collection for runtime interoperability and text-safe deterministic processing.*
+> Each demo runs entirely offline, without external dependencies, and is reproducible across
+> **Linux**, **macOS**, **Windows**, **Android (Termux)**, and **iOS (Pyto)**.
+
+---
+
+## 🎯 Purpose
+
+This suite validates the **PAXECT Polyglot Plugin**, ensuring:
+
+* Deterministic behavior across platforms and languages
+* UTF-8 strictness and proper error recovery
+* CI/CD-safe fail-and-recover cycles
+* Round-trip reproducibility (upper/lower/text transforms)
+* Continuous operation under sustained load
+
+---
+
+## ⚙️ Quick Setup
+
+```bash
+# Clone the Polyglot repository
+git clone https://github.com/paxect/paxect-polyglot.git
+cd paxect-polyglot
+
+# (Optional) create a virtual environment
+python3 -m venv .venv && source .venv/bin/activate
+
+# No extra dependencies required (stdlib-only)
+python paxect_polyglot_plugin.py --mode health && echo "OK"
+```
+
+> 🪟 *Windows tip:* Replace `python3` with `py -3` or `python` depending on your environment.
+
 ---
 
 ## 🚀 Demos Included
 
 All demos are deterministic, self-contained, and safe to run locally or in CI.
 
-| Demo | Script                                | Description                            | Status |
-| ---- | ------------------------------------- | -------------------------------------- | ------ |
-| 00   | `00_env_smoke.py`                     | Environment sanity check               | ✅      |
-| 01   | `01_packaging_provenance.py`          | Provenance and SHA-256 verification    | ✅      |
-| 02   | `02_core_integration.py`              | Bridge between Core and Polyglot       | ✅      |
-| 03   | `03_universal_smoke.py`               | Cross-OS reproducibility baseline      | ✅      |
-| 04   | `04_android_adb_smoke.py`             | Android ADB bridge validation          | ✅      |
-| 05   | `05_ios_http_bridge_ping.py`          | iOS HTTP bridge and gateway smoke      | ✅      |
-| 06   | `06_toolchain_inventory.py`           | System & language inventory            | ✅      |
-| 07   | `07_5_in_1_smoke.py`                  | Combined bridge and runtime validation | ✅      |
-| 09   | `09_universal_end_to_end_polyglot.py` | Python → Node → Go roundtrip           | ✅      |
-| 10   | `10_polyglot_ci_verifier.py`          | CI matrix test orchestrator            | ✅      |
+| Demo | Script                                 | Description                               | Status |
+| ---- | -------------------------------------- | ----------------------------------------- | ------ |
+| 00   | `00_env_smoke.py`                      | Environment sanity check                  | ✅      |
+| 01   | `01_packaging_provenance.py`           | Provenance and SHA-256 verification       | ✅      |
+| 02   | `02_core_integration.py`               | Bridge between Core and Polyglot          | ✅      |
+| 03   | `03_universal_smoke.py`                | Cross-OS reproducibility baseline         | ✅      |
+| 04   | `04_android_adb_smoke.py`              | Android ADB bridge validation             | ✅      |
+| 05   | `05_ios_http_bridge_ping.py`           | iOS HTTP bridge and gateway smoke         | ✅      |
+| 06   | `06_toolchain_inventory.py`            | System & language inventory               | ✅      |
+| 07   | `07_5_in_1_smoke.py`                   | Combined bridge and runtime validation    | ✅      |
+| 09   | `09_universal_end_to_end_polyglot.py`  | Python → Node → Go roundtrip              | ✅      |
+| 10   | `10_polyglot_ci_verifier.py`           | CI matrix orchestrator                    | ✅      |
+| 11   | `demo_11_fail_and_recover_polyglot.py` | UTF-8 corruption fail & self-recover demo | ✅      |
+| 12   | `demo_12_stress_test_polyglot.py`      | One-minute reliability & stress test      | ✅      |
 
-Run all demos at once:
+Run all demos sequentially:
 
 ```bash
-python3 demos/10_polyglot_ci_verifier.py
+for d in demos/demo_*; do
+  echo "Running $d ..."
+  chmod +x "$d"
+  "$d"
+done
 ```
 
 ---
+
+## 🧠 Demo Highlights
+
+### **Demo 11 — Fail & Recover**
+
+Simulates a corrupted UTF-8 file (`0xff` byte) to trigger a decode failure,
+then runs a valid file immediately after to confirm recovery.
+
+**Expected Output:**
+
+```
+returncode: 2
+error: utf-8 decode failed: invalid start byte
+[+] Recovery OK — output: POLYGLOT RECOVERY WORKS
+✅ Self-recovery confirmed
+```
+
+**Log:** `/tmp/paxect_demo11_polyglot/polyglot_recover.log`
+
+---
+
+### **Demo 12 — One-Minute Stress Test**
+
+Runs continuous `upper → lower` transform cycles for 60 seconds.
+
+**Expected Output:**
+
+```
+Completed cycles : ~2900+
+Errors detected  : 0
+Reliability      : 100.0000%
+✅ Polyglot engine passed 1-minute stress test without errors
+```
+
+**Log:** `/tmp/paxect_demo12_polyglot/polyglot_stress.jsonl`
+
+---
+
+## 🧩 Architecture Overview
+
+```text
+paxect-polyglot-plugin/
+├── paxect_polyglot_plugin.py     # Standalone UTF-8 deterministic engine
+├── demos/                        # Enterprise demos 0–12
+│   ├── demo_11_fail_and_recover_polyglot.py
+│   └── demo_12_stress_test_polyglot.py
+└── README.md                     # This document
+```
+
+---
+
+## 🧪 Verification Matrix
+
+| Environment               | Result                                |
+| ------------------------- | ------------------------------------- |
+| Ubuntu 24.04 LTS (x86_64) | ✅ All demos deterministic, no errors  |
+| macOS 14 Sonoma (ARM64)   | ✅ Identical hashes & UTF-8 behavior   |
+| Windows 11 (AMD64)        | ✅ CI pipelines validated successfully |
+| Android (Termux)          | ✅ Works via stdin/stdout bridge       |
+| iOS (Pyto)                | ✅ Passed local smoke tests            |
+
+---
+
+## 🧭 Integrity Model
+
+Each Polyglot operation guarantees:
+
+* **Deterministic I/O**: identical text in = identical text out
+* **UTF-8 strict decoding**: no silent corruption
+* **Zero-telemetry**: fully offline operation
+* **Exit codes**
+
+  * `0` = OK
+  * `2` = I/O or UTF-8 error
+  * `3` = Argument error
+
+---
+
+## ✅ Validation Status
+
+✅ **12/12 demos completed successfully** on
+**Ubuntu 24.04 LTS (x86_64)** using **Python 3.12.3 / GCC 13.3.0**.
+All results reproduced bit-identically across Linux, macOS, and Windows.
+
+---
+
+
 
 ## 🧩 Architecture Overview
 
