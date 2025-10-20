@@ -445,7 +445,7 @@ Sponsorship enables continuous cross-language verification and deterministic QA 
 
 **Contact:**
 📧 **sponsor@PAXECT-Team@outlook.com**
-
+     enterprise@PAXECT-Team@outlook.com
 ---
 
 ## 🪪 License
