@@ -444,7 +444,7 @@ Sponsorship enables continuous cross-language verification and deterministic QA 
 - [Become a GitHub Sponsor](https://github.com/sponsors/PAXECT-Interface)  
 
 **Contact:**
-📧 enterprise@[PAXECT-Team@outlook.com](mailto:PAXECT-Team@outlook.com)
+📧 **sponsor@PAXECT-Team@outlook.com**
 
 ---
 
