@@ -321,7 +321,7 @@ TOTAL                            228      5    97%
 
 ---
 
-## 📦 Integration in CI/CD  name: Polyglot CI
+## 📦 Integration in CI/CD    Name: Polyglot CI
 
 **GitHub Actions Example**
 
