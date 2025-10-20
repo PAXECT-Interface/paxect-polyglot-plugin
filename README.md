@@ -239,7 +239,7 @@ All results reproduced bit-identically across Linux, macOS, and Windows.
 
 
 
-## 🧩 Architecture Overview
+##  📁 Repository Structure
 
 ```text
 paxect-polyglot-plugin/
