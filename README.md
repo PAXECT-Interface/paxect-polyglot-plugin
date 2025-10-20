@@ -87,15 +87,9 @@ allowing Python pipelines, Go microservices, and Node.js orchestration layers to
 
 ---
 
-# 🧩 PAXECT Polyglot Plugin — Enterprise Demo Suite
 
-*(Deterministic · UTF-8 Safe · Cross-Runtime · Offline)*
 
-> 💬 *Validated demo collection for runtime interoperability and text-safe deterministic processing.*
-> Each demo runs entirely offline, without external dependencies, and is reproducible across
-> **Linux**, **macOS**, **Windows**, **Android (Termux)**, and **iOS (Pyto)**.
 
----
 
 ## 🎯 Purpose
 
