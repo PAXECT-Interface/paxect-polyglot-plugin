@@ -1,5 +1,7 @@
 # PAXECT Trademarks
 
-“PAXECT” and the PAXECT logo/ PAXECT products are trademarks of PAXECT Lab.
-You may use the name to refer to the project, but not to imply endorsement or as your own product/brand.
-Forks must use distinct names/branding. For permissions and questions: 📧 contact@PAXECT-Team@outlook.com  
+“PAXECT” and the PAXECT logo (and related PAXECT products) are trademarks of **PAXECT Lab**.  
+You may reference the name **only** to describe the official open-source project — not to imply endorsement or create derivative branding.  
+All forks and derivative projects must use **distinct names and visuals**.
+
+For permissions or questions, contact: 📧 **contact.PAXECT.Team@outlook.com**
