@@ -1,4 +1,4 @@
-# Contributor Code of Conduct
+## Contributor Code of Conduct
 
 ## Our Standards
 
@@ -29,7 +29,7 @@ This Code of Conduct applies to all project spaces, including GitHub discussions
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project maintainers via:
-**security@paxect.org**
+**PAXECT-Team@outlook.com**
 
 All complaints will be reviewed and investigated promptly and fairly.  
 Maintainers are obligated to respect the privacy and safety of reporters.
@@ -38,3 +38,4 @@ Maintainers are obligated to respect the privacy and safety of reporters.
 
 This Code of Conduct is adapted from the Contributor Covenant, version 2.1, available at  
 https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
+
