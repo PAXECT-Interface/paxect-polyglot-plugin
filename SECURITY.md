@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="ChatGPT%20Image%202%20okt%202025%2C%2022_33_51.png" alt="PAXECT logo" width="200"/>
+</p>
+
 # Security Policy — PAXECT Polyglot
 
 Security is a first-class principle of the **PAXECT Polyglot Plugin** and the broader **PAXECT** ecosystem.  
