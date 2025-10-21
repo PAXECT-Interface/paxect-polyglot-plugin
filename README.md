@@ -16,6 +16,8 @@
 
 # 🌐 **PAXECT Polyglot — Cross-Language Deterministic Bridge**
 
+> Status: **v1.0.0 — Initial Public Release** (see Releases)
+
 Secure, deterministic interoperability across languages, runtimes, and operating systems.
 The **PAXECT Polyglot Plugin** provides a reproducible, verifiable data bridge between **Python**, **Node.js**, and **Go** —
 extensible to any runtime through a common binary interface powered by **PAXECT Core**.
