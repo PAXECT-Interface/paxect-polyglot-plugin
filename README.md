@@ -477,44 +477,39 @@ Deterministic interoperability for the modern multi-language enterprise
 
 
 [![Star this repo](https://img.shields.io/badge/⭐%20Star-this%20repo-orange)](../../stargazers)
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
 [![CI](https://img.shields.io/badge/CI-passing-brightgreen.svg)](../../actions)
 [![CodeQL](https://img.shields.io/badge/CodeQL-active-lightgrey.svg)](../../actions)
 [![Issues](https://img.shields.io/badge/Issues-open-blue)](../../issues)
 [![Discussions](https://img.shields.io/badge/Discuss-join-blue)](../../discussions)
 [![Security](https://img.shields.io/badge/Security-responsible%20disclosure-informational)](./SECURITY.md)
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](./LICENSE)
+
 
 
 
 # PAXECT Core Complete
-
-
 
 **Deterministic, offline-first runtime for secure, reproducible data pipelines.**  
 Cross-platform, self-tuning, and fully auditable — built for real-world enterprise and open-source innovation.
 
 ---
 
-##  Overview
+## Overview
 
-**PAXECT Core Complete** is the reference implementation of the PAXECT ecosystem.  
-It unifies the verified modules — Core, AEAD Hybrid, Polyglot, SelfTune, and Link —  
-into one reproducible, cross-OS runtime with **10 integrated demos** and full observability.
+**PAXECT Core Complete** is the official reference implementation of the PAXECT ecosystem.  
+It unifies the verified modules — **Core**, **AEAD Hybrid**, **Polyglot**, **SelfTune**, and **Link** —  
+into one reproducible, cross-OS runtime featuring **10 integrated demos**, full observability, and deterministic performance across environments.
 
-### Core principles
-- **Determinism first** — bit-identical results across systems  
-- **Offline-first** — no network or telemetry unless explicitly enabled  
-- **Audit-ready** — human summaries + machine-readable JSON logs  
-- **Cross-platform** — Linux · macOS · Windows · FreeBSD · OpenBSD · Android · iOS  
-- **Zero-dependency security** — Hybrid AES-GCM / ChaCha20-Poly1305  
-- **Adaptive control** — SelfTune 5-in-1 plugin with ε-greedy logic  
+### Key Highlights
+- **Unified Ecosystem:** Combines Core, AEAD Hybrid, SelfTune, Polyglot, and Link into one verified bundle  
+- **Reproducible Pipelines:** Bit-identical behavior across Linux, macOS, Windows, FreeBSD, Android, and iOS  
+- **Offline-First:** No telemetry, no network dependencies — privacy by design  
+- **Enterprise-Grade Validation:** 10 deterministic demos with automated verification and observability endpoints  
+- **Zero-AI Runtime:** SelfTune plugin provides adaptive control without any AI or heuristic behavior  
+- **Open Source Forever:** Apache-2.0 licensed, transparent governance, and fair “Path to Paid” model
+
 
 ---
-
-
-
-
-
 
 ##  Installation
 
@@ -590,7 +585,10 @@ paxect-core-complete/
 | **paxect_selftune_plugin.py**    | Adaptive ε-greedy self-tuning · persistent state  |
 | **paxect_link_plugin.py**        | Secure relay · inbox/outbox · policy validation   |
 
----
+
+![PAXECT Architecture](docs/paxect_architecture_brand_v18.svg)
+
+
 ## Plugins (official)
 
 
@@ -600,11 +598,11 @@ paxect-core-complete/
 | **AEAD Hybrid**                | Confidentiality & integrity     | Hybrid AES-GCM/ChaCha20-Poly1305 — fast, zero-dep, cross-OS                          | [https://github.com/PAXECT-Interface/paxect-aead-hybrid-plugin](https://github.com/PAXECT-Interface/paxect-aead-hybrid-plugin) |
 | **Polyglot**                   | Language bindings               | Python · Node.js · Go — identical deterministic pipeline                             | [https://github.com/PAXECT-Interface/paxect-polyglot-plugin](https://github.com/PAXECT-Interface/paxect-polyglot-plugin)       |
 | **SelfTune 5-in-1**            | Runtime control & observability | No-AI guardrails, overhead caps, backpressure, jitter smoothing, lightweight metrics | [https://github.com/PAXECT-Interface/paxect-selftune-plugin](https://github.com/PAXECT-Interface/paxect-selftune-plugin)       |
-| **Link (Inbox/Outbox Bridge)** | Cross-OS file exchange          | Shared-folder relay: auto-encode non-`.freq` → `.freq`, auto-decode `.freq` → files  | [https://github.com/PAXECT-Interface/paxect-link-plugin](https://github.com/PAXECT-Interface/paxect-link-plugin) 
+| **Link (Inbox/Outbox Bridge)** | Cross-OS file exchange          | Shared-folder relay: auto-encode non-`.freq` → `.freq`, auto-decode `.freq` → files  | [https://github.com/PAXECT-Interface/paxect-link-plugin](https://github.com/PAXECT-Interface/paxect-link-plugin)    
 
+**Plug-and-play:** Core runs without plugins. Enable per run via config/flag or through the binding API. Deterministic behavior remains identical.
 
 ---
-
 
 ## 🧪 Demo suite (01 – 10)
 
@@ -682,14 +680,69 @@ PAXECT Core Complete follows an **open contribution model**.
 In short: updates arrive when they are ready — verified, deterministic, and tested across platforms.
 
 
+
+
+## Sponsorships & Enterprise Support
+
+**PAXECT Core Complete** is maintained as a verified, plug-and-play enterprise bundle that unifies all official PAXECT modules.  
+Sponsorships directly support ongoing cross-platform validation, reproducibility testing, and deterministic compliance across **Linux**, **Windows**, and **macOS** — ensuring that the entire PAXECT ecosystem remains stable, auditable, and openly accessible for everyone.
+
+### Enterprise Sponsorship Options
+- Infrastructure validation and multi-OS QA
+- CI/CD and deterministic performance compliance testing
+- Integration, OEM, and observability partnerships
+- Extended reproducibility assurance for regulated environments
+
+### How to Get Involved
+- 💠 [Become a GitHub Sponsor](https://github.com/sponsors/PAXECT-Interface)  
+- 📧 For enterprise or OEM inquiries: **enterprise@PAXECT-Team@outlook.com  **
+
+> Sponsorships help sustain open innovation — keeping PAXECT free, verifiable, and enterprise-ready.
+
+
 ---
+## Governance & Ownership
+- **Ownership:** All PAXECT products and trademarks (PAXECT™ name + logo) remain the property of the Owner.
+- **License:** Source code is Apache-2.0; trademark rights are **not** granted by the code license.
+- **Core decisions:** Architectural decisions and **final merges** for Core and brand-sensitive repos require **Owner approval**.
+- **Contributions:** PRs are welcome and reviewed by maintainers; merges follow CODEOWNERS + branch protection.
+- **Naming/branding:** Do not use the PAXECT name/logo for derived projects without written permission; see `TRADEMARKS.md`.
+---
+## Path to Paid — PAXECT Core Complete
 
-## 📢 Key principles
+**PAXECT Core Complete** is designed to remain free and open-source at its foundation.  
+At the same time, sustainable funding ensures long-term maintenance, reproducibility validation, and enterprise adoption.
 
-> Determinism · Privacy · Reproducibility · Cross-Platform · Transparency
+### Principles
+- **Core stays free forever** — no lock-in, no hidden fees  
+- **Volunteers and researchers:** always free access to source, builds, and community discussions  
+- **Transparency:** clear public timelines and change announcements  
+- **Fairness:** individuals stay free; organizations that rely on enterprise-grade integrations contribute financially  
 
-Copyright© 2025 PAXECT Systems · Licensed under Apache 2.0
+### Timeline
+- **Launch phase:** Beginning with the official PAXECT product release, all modules — including enterprise — are free for the first **6 months**  
+- The free-enterprise period applies **globally**, not per user or organization  
+- **30 days before renewal:** the team and community will decide whether to extend or conclude the free-enterprise phase  
+- **Baseline Core model:** permanently open-source, continuously updated  
 
+### Why This Matters
+- **Motivation:** contributors know their work remains valuable and accessible  
+- **Stability:** enterprises gain predictable, verified, and funded support  
+- **Sustainability:** secures continuous innovation without compromising openness
+
+
+
+### Contact
+
+PAXECT-Team@outlook.com  
+
+ [Issues](https://github.com/PAXECT-Interface/PAXECT---Core/issues)  
+ [Discussions](https://github.com/PAXECT-Interface/PAXECT---Core/discussions)  
+
+*For security-related issues, please use responsible disclosure channels.*
+
+---
+Copyright © 2025 PAXECT 
 
 ---
 
