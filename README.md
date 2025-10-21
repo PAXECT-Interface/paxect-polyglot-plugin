@@ -11,6 +11,9 @@
 [![Issues](https://img.shields.io/badge/Issues-open-blue)](../../issues)
 [![Discussions](https://img.shields.io/badge/Discuss-join-blue)](../../discussions)
 [![Security](https://img.shields.io/badge/Security-responsible%20disclosure-informational)](./SECURITY.md)
+<a href="https://github.com/PAXECT-Interface/paxect-polyglot-plugin/releases/latest">
+  <img alt="Release" src="https://img.shields.io/github/v/release/PAXECT-Interface/paxect-polyglot-plugin?label=polyglot">
+</a>
 
 ---
 
