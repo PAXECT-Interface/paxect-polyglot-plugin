@@ -369,7 +369,7 @@ Each hop validates CRC32, SHA-256, and container version fields for reproducibil
 
 | Plugin                         | Scope                           | Highlights                                                                           | Repo                                                                                                                           |
 | ------------------------------ | ------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| **Core**                       | Deterministic container         | `.freq` v42 · multi-channel · CRC32+SHA-256 · cross-OS · offline · no-AI             | [https://github.com/PAXECT-Interface/paxect---core.git](https://github.com/PAXECT-Interface/paxect---core.git)                             |
+| **Core**                       | Deterministic container         | `.freq` v42 · multi-channel · CRC32+SHA-256 · cross-OS · offline · no-AI             | [https://github.com/PAXECT-Interface/paxect-core.git](https://github.com/PAXECT-Interface/paxect---core.git)                             |
 | **AEAD Hybrid**                | Confidentiality & integrity     | Hybrid AES-GCM/ChaCha20-Poly1305 — fast, zero-dep, cross-OS                          | [https://github.com/PAXECT-Interface/paxect-aead-hybrid-plugin](https://github.com/PAXECT-Interface/paxect-aead-hybrid-plugin) |
 | **Polyglot**                   | Language bindings               | Python · Node.js · Go — identical deterministic pipeline                             | [https://github.com/PAXECT-Interface/paxect-polyglot-plugin](https://github.com/PAXECT-Interface/paxect-polyglot-plugin)       |
 | **SelfTune 5-in-1**            | Runtime control & observability | No-AI guardrails, overhead caps, backpressure, jitter smoothing, lightweight metrics | [https://github.com/PAXECT-Interface/paxect-selftune-plugin](https://github.com/PAXECT-Interface/paxect-selftune-plugin)       |
@@ -422,8 +422,8 @@ We actively review proposals and merge validated ideas into the PAXECT roadmap.
 
 ## Project Recognition
 
-If **PAXECT SelfTune** helped your research, deployment, or enterprise project,  
-please consider giving the repository a [Star on GitHub](https://github.com/PAXECT-Interface/paxect-selftune-plugin/stargazers) —  
+If **PAXECT Polyglot plugin** helped your research, deployment, or enterprise project,  
+please consider giving the repository a [Star on GitHub](https://github.com/PAXECT-Interface/paxect-polyglot-plugin/stargazers) —  
 it helps others discover the project and supports long-term maintenance.
 
 ---
@@ -594,7 +594,7 @@ paxect-core-complete/
 
 | Plugin                         | Scope                           | Highlights                                                                           | Repo                                                                                                                           |
 | ------------------------------ | ------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| **Core**                       | Deterministic container         | `.freq` v42 · multi-channel · CRC32+SHA-256 · cross-OS · offline · no-AI             | [https://github.com/PAXECT-Interface/paxect---core.git](https://github.com/PAXECT-Interface/paxect---core.git)                             |
+| **Core**                       | Deterministic container         | `.freq` v42 · multi-channel · CRC32+SHA-256 · cross-OS · offline · no-AI             | [https://github.com/PAXECT-Interface/paxect-core.git](https://github.com/PAXECT-Interface/paxect---core.git)                             |
 | **AEAD Hybrid**                | Confidentiality & integrity     | Hybrid AES-GCM/ChaCha20-Poly1305 — fast, zero-dep, cross-OS                          | [https://github.com/PAXECT-Interface/paxect-aead-hybrid-plugin](https://github.com/PAXECT-Interface/paxect-aead-hybrid-plugin) |
 | **Polyglot**                   | Language bindings               | Python · Node.js · Go — identical deterministic pipeline                             | [https://github.com/PAXECT-Interface/paxect-polyglot-plugin](https://github.com/PAXECT-Interface/paxect-polyglot-plugin)       |
 | **SelfTune 5-in-1**            | Runtime control & observability | No-AI guardrails, overhead caps, backpressure, jitter smoothing, lightweight metrics | [https://github.com/PAXECT-Interface/paxect-selftune-plugin](https://github.com/PAXECT-Interface/paxect-selftune-plugin)       |
@@ -736,8 +736,8 @@ At the same time, sustainable funding ensures long-term maintenance, reproducibi
 
 PAXECT-Team@outlook.com  
 
- [Issues](https://github.com/PAXECT-Interface/PAXECT---Core/issues)  
- [Discussions](https://github.com/PAXECT-Interface/PAXECT---Core/discussions)  
+ [Issues](https://github.com/PAXECT-Interface/PAXECT-Core/issues)  
+ [Discussions](https://github.com/PAXECT-Interface/PAXECT-Core/discussions)  
 
 *For security-related issues, please use responsible disclosure channels.*
 
