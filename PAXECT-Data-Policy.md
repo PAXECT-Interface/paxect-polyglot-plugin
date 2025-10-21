@@ -1,4 +1,3 @@
-
 <p align="center">
   <img src="ChatGPT%20Image%202%20okt%202025%2C%2022_33_51.png" alt="PAXECT logo" width="200"/>
 </p>
@@ -17,7 +16,7 @@ This ensures predictable performance, stability, and reproducibility across all 
 
   ```bash
   export PAXECT_MAX_INPUT_MB=8192  # Allows up to 8 GB
-````
+
 
 * **Error message when exceeded:**
 
@@ -64,5 +63,10 @@ All operational and configuration policies are maintained by **PAXECT Lab** unde
 ```
 
 ---
+
+
+
+
+
 
 
