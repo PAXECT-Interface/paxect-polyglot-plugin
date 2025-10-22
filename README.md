@@ -15,32 +15,37 @@
   <img alt="Release" src="https://img.shields.io/github/v/release/PAXECT-Interface/paxect-polyglot-plugin?label=polyglot">
 </a>
 
----
 
-🌐 PAXECT Polyglot — Cross-Language Deterministic Bridge
-
-Status: v1.0.0 — Initial Public Release — October 22, 2025
-
-Deterministic, offline-first, and reproducible — built for secure data pipelines and NIS2-ready digital hygiene.
-
-PAXECT Polyglot provides secure, deterministic interoperability across languages, runtimes, and operating systems.
-It’s a reproducible, verifiable data bridge between Python, Node.js, and Go, extensible to any runtime through a common binary interface powered by PAXECT Core.
-
-Plug-and-play: zero dependencies, no vendor lock-in, and cross-OS reproducibility.
-No cloud, no AI heuristics — just byte-for-byte deterministic transport with checksum-verified integrity (CRC32 + SHA-256).
-
-🧩 Overview
-
-PAXECT Polyglot is a multi-language bridge enabling lossless, reproducible data exchange between heterogeneous runtimes.
-It ensures that both binary and textual data remain bit-identical when transferred between languages, platforms, and operating systems.
-
-Unlike traditional serialization frameworks — JSON, Protobuf, MsgPack — which introduce drift, rounding, or type loss,
-Polyglot uses the PAXECT Core container format to guarantee checksum-verified integrity and deterministic reproducibility.
-
-It acts as the glue layer between analytical systems, edge devices, and enterprise runtimes —
-allowing Python pipelines, Go microservices, and Node.js orchestration layers to communicate reproducibly and securely.
 
 ---
+
+# 🌐 PAXECT Polyglot — Cross-Language Deterministic Bridge
+
+**Status:** v1.0.0 — Initial Public Release — October 22, 2025
+
+**Deterministic, offline-first, and reproducible — built for secure data pipelines and NIS2-ready digital hygiene.**
+
+PAXECT Polyglot provides **secure, deterministic interoperability** across languages, runtimes, and operating systems.
+It’s a **reproducible, verifiable data bridge** between **Python, Node.js, and Go**, extensible to any runtime through a common binary interface powered by **PAXECT Core**.
+
+**Plug-and-play:** zero dependencies, no vendor lock-in, and cross-OS reproducibility.
+**No cloud, no AI heuristics — just byte-for-byte deterministic transport with checksum-verified integrity (CRC32 + SHA-256).**
+
+---
+
+### 🧩 Overview
+
+**PAXECT Polyglot** is a **multi-language bridge** enabling **lossless, reproducible data exchange** between heterogeneous runtimes.
+It ensures that both binary and textual data remain **bit-identical** when transferred between languages, platforms, and operating systems.
+
+Unlike traditional serialization frameworks — **JSON, Protobuf, MsgPack** — which introduce drift, rounding, or type loss,
+Polyglot uses the **PAXECT Core container format** to guarantee **checksum-verified integrity and deterministic reproducibility**.
+
+It acts as the **glue layer** between analytical systems, edge devices, and enterprise runtimes —
+allowing **Python pipelines**, **Go microservices**, and **Node.js orchestration layers** to communicate reproducibly and securely.
+
+---
+
 
 ## ⚙️ Key Features
 
