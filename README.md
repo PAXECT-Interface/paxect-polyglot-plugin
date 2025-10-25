@@ -16,6 +16,11 @@
 </a>
 
 
+#  PAXECT — The Universal Deterministic Bridge
+Build once, run anywhere. Connect all operating systems and programming languages through one reproducible, offline-first runtime.
+🌐 Learn more about the ecosystem: [PAXECT Universal Bridge](https://github.com/PAXECT-Interface/paxect-universal-bridge)
+
+
 
 ---
 
@@ -23,7 +28,7 @@
 
 **Status:** v1.0.0 — Initial Public Release — October 22, 2025
 
-> 🌐 Learn more about the ecosystem: [PAXECT Universal Bridge](https://github.com/PAXECT-Interface/paxect-universal-bridge)
+
 
 
 **Deterministic, offline-first, and reproducible — built for secure data pipelines and NIS2-ready digital hygiene.**
